@@ -1,0 +1,41 @@
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+// ex-1 : 인수를 받을수있고, 기본값도 넣을수있다.
+@mixin flexCenter2($size: 30px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  li {
+    margin-right: $size;
+  }
+  @content; // ex-2 : @content를 사용하면 원하는 부분에 스타일을 추가하여 전달할 수 있다.
+}
+.one {
+  @include flexCenter2(10px);
+  background-color: lightgray;
+  /*
+  li {
+    margin-right: 10px;
+  }2
+  */
+}
+.two {
+  @include flexCenter2(20px);
+  background-color: pink;
+  /*
+  li {
+    margin-right: 20px;
+  }
+  */
+}
+.three {
+  @include flexCenter2 {
+    color: white;
+  }
+  background-color: skyblue;
+}
