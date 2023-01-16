@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* 반응형 예제 */
+.main {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+  .main {
+    width: 100px;
+    height: 100px;
+    font-size: 14px;
+    background-color: red;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main {
+    width: 70px;
+    height: 70px;
+    font-size: 14px;
+    background-color: orange;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main {
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    background-color: yellow;
+  }
+}
+
+/* for반복문으로 각각 이미지 부여 */
+.photo-box:nth-child(1) {
+  background-image: url("../assets/phoster1.png");
+}
+
+.photo-box:nth-child(2) {
+  background-image: url("../assets/phoster2.png");
+}
+
+.photo-box:nth-child(3) {
+  background-image: url("../assets/phoster3.png");
+}
+
+.photo-box:nth-child(4) {
+  background-image: url("../assets/phoster4.png");
+}
+
+.photo-box:nth-child(5) {
+  background-image: url("../assets/phoster5.png");
+}
+
+/* each반복문은 list의 각각요소를 순회해서 스타일을 적용 */
+.color-circle:nth-child(1) {
+  background: #dad5d2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(2) {
+  background: #3a3532;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(3) {
+  background: #375945;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(4) {
+  background: #5b8767;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(5) {
+  background: #a6c198;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.color-circle:nth-child(6) {
+  background: #dbdfc8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+/* 거듭제곱을 구하는 함수 */
+.sidebar {
+  float: left;
+  margin-left: 64px;
+}
+
+/* 색상내장함수 */
+.colorBox {
+  color: purple; /* ex-1 : 컬러를 섞음 */
+  background-color: #ff6666; /* ex-2 : 밝게, 혹은 어둡게 */
+  background-color: #990000;
+  color: gray; /* ex-3 : 회색으로 만들어줌 */
+  color: #000fff; /* ex-4 : 반전시킴 */
+}

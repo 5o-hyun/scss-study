@@ -1,0 +1,26 @@
+/* 거듭제곱을 구하는 함수 */
+// 의미없는 변수선언 $_
+@function pow($base, $exponent) {
+  $result: 1;
+  @for $_ from 1 through $exponent {
+    $result: $result * $base;
+  }
+  @return $result;
+}
+
+.sidebar {
+  float: left;
+  margin-left: pow(4, 3) * 1px;
+}
+
+/* 색상내장함수 */
+$color1: red;
+$color2: blue;
+
+.colorBox {
+  color: mix($color1, $color2); /* ex-1 : 컬러를 섞음 */
+  background-color: lighten($color1, 20%); /* ex-2 : 밝게, 혹은 어둡게 */
+  background-color: darken($color1, 20%);
+  color: grayscale(#fff000); /* ex-3 : 회색으로 만들어줌 */
+  color: invert(#fff000); /* ex-4 : 반전시킴 */
+}
