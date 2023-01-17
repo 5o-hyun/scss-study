@@ -1,1 +1,21 @@
-# scss-study
+# :books: scss-study
+
+- 파일분리와 중첩(Nesting)
+  - 파일분리
+  - 주석
+  - 중첩
+  - `&` : 상위선택자참조
+  - `@at-root` : 중첩벗어나기
+- 변수(Variable)
+  - 변수사용, 전역/지역변수, 재할당가능, map list 사용가능
+- 재활용(Mixin)
+  - `@mixin`으로 만들고 `@include`로 가져와 사용
+  - `@content` : 추가하고 싶은 값
+- Extend
+  - `%`로 선언하고 `@extend`로 가져와 사용
+- 조건문,반복문,함수
+  - 조건문 : `if-else`
+  - 반복문 : `for`, `each`
+  - 함수 : 계산을 해서 값을 반환하는 역할
+  - 색상내장함수 : `mix` : 색상을 섞음 `lighten` : 밝게 `darken` : 어둡게 `grayscale` : 회색으로 `invert` : 반전
+- 미디어쿼리
